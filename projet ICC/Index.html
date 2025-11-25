@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Accueil • ICC</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<a class="brand" href="index.html">ICC</a>
+			<nav class="site-nav">
+				<a href="index.html" class="nav-link">Accueil</a>
+				<a href="about.html" class="nav-link">À propos</a>
+				<a href="vision.html" class="nav-link">Vision</a>
+				<a href="messages.html" class="nav-link">Messages</a>
+				<a href="contact.html" class="nav-link btn">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<section class="hero">
+			<div class="hero-text">
+				<h1>Bienvenue à ICC</h1>
+				<p>Louange. Enseignement. Une communauté au service.</p>
+			</div>
+			<div class="hero-media">
+				<img src="images/groupe de louange.jpg" alt="Groupe de louange en train de chanter">
+			</div>
+		</section>
+		<section class="grid">
+			<article>
+				<img src="images/enseignement.jpg" alt="Temps d'enseignement avec prise de notes">
+				<h3>Enseignement</h3>
+				<p>Découvre des messages centrés sur la Parole.</p>
+			</article>
+			<article>
+				<img src="images/moment de partage.jpg" alt="Équipe souriante debout ensemble">
+				<h3>Notre équipe</h3>
+				<p>Des personnes au service de la vision.</p>
+			</article>
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> ICC. Tous droits réservés.</p>
+		</div>
+	</footer>
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+		const path = 'index.html';
+		document.querySelectorAll('.nav-link').forEach(a => {
+			if (a.getAttribute('href') === path) a.classList.add('active');
+		});
+	</script>
+</body>
+</html>

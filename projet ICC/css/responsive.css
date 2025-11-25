@@ -1,0 +1,65 @@
+
+@media (max-width: 900px){
+	.hero{grid-template-columns:1fr}
+	.grid{grid-template-columns:repeat(auto-fit, minmax(200px, 1fr))}
+}
+
+
+@media (max-width: 600px){
+	.container{width:min(var(--container), calc(100% - 1.25rem))}
+	.hero{gap:0.8rem; padding:1.25rem 0}
+	.grid{gap:0.8rem; margin:1.25rem 0}
+}
+
+
+
+@media (max-width: 900px){
+	.site-nav{gap:0.6rem; flex-wrap:wrap}
+}
+
+@media (max-width: 600px){
+	.site-header .container{padding:0.7rem 0}
+	.brand{font-size:1rem}
+	.nav-link{padding:0.35rem 0.5rem}
+	.site-nav{gap:0.5rem}
+}
+
+
+
+@media (max-width: 900px){
+	.cards{grid-template-columns:repeat(auto-fit, minmax(220px,1fr))}
+}
+@media (max-width: 600px){
+	.cards{grid-template-columns:1fr; gap:0.8rem}
+	.cards li{padding:0.9rem}
+}
+
+
+
+@media (max-width: 900px){
+	.contact-form{max-width:100%}
+}
+@media (max-width: 600px){
+	input, textarea{padding:0.55rem 0.65rem; font-size:0.95rem}
+	label{gap:0.3rem}
+}
+
+
+
+@media (max-width: 900px){
+	body{line-height:1.65}
+}
+@media (max-width: 600px){
+	h1{font-size:1.6rem}
+	h2{font-size:1.25rem}
+	p{font-size:1rem}
+}
+
+
+
+@media (max-width: 900px){
+	.hero .hero-text p{margin:0.25rem 0 0}
+}
+@media (max-width: 600px){
+	.hero .hero-media img{border-radius:10px}
+}

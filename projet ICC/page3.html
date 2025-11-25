@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vision • ICC</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container"><a class="brand" href="index.html">ICC</a>
+<nav class="site-nav">
+	<a href="index.html" class="nav-link">Accueil</a>
+	<a href="about.html" class="nav-link">À propos</a>
+	<a href="vision.html" class="nav-link">Vision</a>
+	<a href="messages.html" class="nav-link">Messages</a>
+	<a href="contact.html" class="nav-link btn">Contact</a>
+</nav>
+</div>
+</header>
+<main class="container">
+	<h1>Notre vision</h1>
+	<p>Adorer Dieu, former des disciples, servir la ville.</p>
+	<img src="images/temps d'adoration.jpg" alt="Assemblée en louange" class="rounded">
+</main>
+<footer class="site-footer">
+	<div class="container">
+		<p>© <span id="year"></span> ICC. Tous droits réservés.</p>
+	</div>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelector('.site-nav a[href="vision.html"]').classList.add('active');
+</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact • ICC</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container"><a class="brand" href="index.html">ICC</a>
+<nav class="site-nav">
+	<a href="index.html" class="nav-link">Accueil</a>
+	<a href="about.html" class="nav-link">À propos</a>
+	<a href="vision.html" class="nav-link">Vision</a>
+	<a href="messages.html" class="nav-link">Messages</a>
+	<a href="contact.html" class="nav-link btn">Contact</a>
+</nav>
+</div>
+</header>
+<main class="container">
+	<h1>Contact</h1>
+	<form class="contact-form" action="#" method="post">
+		<label>Nom
+			<input type="text" name="name" required>
+		</label>
+		<label>Email
+			<input type="email" name="email" required>
+		</label>
+		<label>Message
+			<textarea name="message" rows="6" required></textarea>
+		</label>
+		<button type="submit" class="btn">Envoyer</button>
+	</form>
+</main>
+<footer class="site-footer">
+	<div class="container">
+		<p>© <span id="year"></span> ICC. Tous droits réservés.</p>
+	</div>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelector('.site-nav a[href="contact.html"]').classList.add('active');
+</script>
+</body>
+</html>

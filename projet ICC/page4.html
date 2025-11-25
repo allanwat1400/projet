@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Messages • ICC</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+	<div class="container">
+		<a class="brand" href="index.html">ICC</a>
+<nav class="site-nav">
+	<a href="index.html" class="nav-link">Accueil</a>
+	<a href="about.html" class="nav-link">À propos</a>
+	<a href="vision.html" class="nav-link">Vision</a>
+	<a href="messages.html" class="nav-link">Messages</a>
+	<a href="contact.html" class="nav-link btn">Contact</a>
+</nav>
+</div>
+</header>
+<main class="container">
+	<h1>Messages</h1>
+	<ul class="cards">
+		<li>
+			<img src="images/enseignement.jpg" alt="Message du jour sur un passage biblique">
+			<h3>Le message du jour</h3>
+			<p>Résumé court du message…</p>
+			<a class="btn-link" href="#">Écouter</a>
+		</li>
+	</ul>
+</main>
+<footer class="site-footer">
+	<div class="container">
+		<p>© <span id="year"></span> ICC. Tous droits réservés.</p>
+	</div>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelector('.site-nav a[href="messages.html"]').classList.add('active');
+</script>
+</body>
+</html>
